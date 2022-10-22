@@ -1,11 +1,11 @@
-int relay = 8;
+int relay = 9;  // call pin as a variable
 void setup() {
-  pinMode(relay, OUTPUT);
+  pinMode(relay, OUTPUT); //initialize pin as an output
 }
 
 void loop() {
-  digitalWrite(relay, LOW);
+  digitalWrite(relay, LOW); //turn on for 2 seconds
   delay(2000);
-  digitalWrite(relay, HIGH);
+  digitalWrite(relay, HIGH);  //turn off for 1 second
   delay(1000);
 }
